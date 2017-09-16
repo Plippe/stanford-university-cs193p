@@ -24,18 +24,6 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-4r-Uuw" customClass="FaceView" customModule="faceit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="smileyScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeLineWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeLineColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,6 +34,9 @@
                             <constraint firstItem="EN4-4r-Uuw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="wyQ-RL-RjO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="EN4-4r-Uuw" id="nf9-3Z-aGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

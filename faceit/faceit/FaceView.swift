@@ -12,16 +12,34 @@ import UIKit
 class FaceView: UIView {
 
     @IBInspectable
-    var smileyScale: CGFloat = 0.9
+    var smileyScale: CGFloat = 0.9 { didSet { setNeedsDisplay() } }
 
     @IBInspectable
-    var eyesOpen: Bool = false
+    var eyesOpen: Bool = false { didSet { setNeedsDisplay() } }
 
     @IBInspectable
     var strokeLineWidth: CGFloat = 3.0
 
     @IBInspectable
     var strokeLineColor: UIColor = UIColor.blue
+
+    @IBInspectable
+    var mouthCurvature: Double = 0.0
+
+    func updateSmileyScale(reactTo pinchRecognizer: UIPinchGestureRecognizer) {
+        switch pinchRecognizer.state {
+        case .changed,.ended:
+            smileyScale *= pinchRecognizer.scale
+            pinchRecognizer.scale = 1
+        default: break
+        }
+    }
+
+    func toggleEyesOpen(reactTo tapRecognizer: UITapGestureRecognizer) {
+        if tapRecognizer.state == .ended {
+            eyesOpen = !eyesOpen
+        }
+    }
 
     func updatePath(_ path: UIBezierPath) -> UIBezierPath {
         path.lineWidth = strokeLineWidth

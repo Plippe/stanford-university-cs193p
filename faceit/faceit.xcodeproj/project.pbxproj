@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3286E61F6D7CDC0089ED55 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3286E51F6D7CDC0089ED55 /* FacialExpression.swift */; };
 		CE883F1F1F2E0B0E00E9498F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE883F1E1F2E0B0E00E9498F /* AppDelegate.swift */; };
 		CE883F211F2E0B0E00E9498F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE883F201F2E0B0E00E9498F /* ViewController.swift */; };
 		CE883F241F2E0B0E00E9498F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE883F221F2E0B0E00E9498F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3286E51F6D7CDC0089ED55 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		CE883F1B1F2E0B0E00E9498F /* faceit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faceit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE883F1E1F2E0B0E00E9498F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE883F201F2E0B0E00E9498F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				CE883F201F2E0B0E00E9498F /* ViewController.swift */,
 				CE883F311F2E0BEF00E9498F /* FaceView.swift */,
 				CE883F221F2E0B0E00E9498F /* Main.storyboard */,
+				CE3286E51F6D7CDC0089ED55 /* FacialExpression.swift */,
 			);
 			path = faceit;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE883F321F2E0BEF00E9498F /* FaceView.swift in Sources */,
+				CE3286E61F6D7CDC0089ED55 /* FacialExpression.swift in Sources */,
 				CE883F211F2E0B0E00E9498F /* ViewController.swift in Sources */,
 				CE883F1F1F2E0B0E00E9498F /* AppDelegate.swift in Sources */,
 			);
